@@ -34,3 +34,4 @@ jobs:
           containerAppName: test-actions
           resourceGroup: dotnet-conf-2022
           dockerfilePath: ${{ github.workspace }}/src/Dockerfile
+          targetPort: 3500
