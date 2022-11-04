@@ -27,11 +27,13 @@ app.UseCors();
 
 app.MapGet("/", async context =>
 {
+    System.Console.WriteLine("Index page requested");
     await context.Response.WriteAsync("Hit the /albums endpoint to retrieve a list of albums!");
 });
 
 app.MapGet("/albums", () =>
 {
+    System.Console.WriteLine("Albums API requested");
     return Album.GetAll();
 })
 .WithName("GetAlbums");
