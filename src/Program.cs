@@ -28,7 +28,7 @@ app.UseCors();
 app.MapGet("/", async context =>
 {
     System.Console.WriteLine("Index page requested");
-    await context.Response.WriteAsync("Hit the /albums endpoint to retrieve a list of albums!");
+    await context.Response.WriteAsync("Hit the /albums endpoint to retrieve a list of albums! Deployed from GitHub Actions!");
 });
 
 app.MapGet("/albums", () =>
