@@ -33,4 +33,3 @@ jobs:
           acrName: ca6dd75f61c0acr
           containerAppName: test-actions
           resourceGroup: dotnet-conf-2022
-          dockerfilePath: ${{ github.workspace }}/src/Dockerfile
